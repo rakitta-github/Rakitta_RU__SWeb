@@ -72,6 +72,17 @@
                         <li>Санкт-Петербург, ул. Минеральная, д. 32</li>
                         <li><a href="/contacts/" class="underline">посмотреть на карте</a></li>
                     </ul>
+                    <ul>
+                        <li><a href="http://www.rakitta.online" target="_blank">Интернет-магазин</a></li>
+                    </ul>
+                    <div class="bx-socialsidebar-group">
+                        <ul>
+                            <li><a class="fb bx-socialsidebar-icon" target="-blank" href="https://www.facebook.com/rakittaru/"></a></li>
+                            <li><a class="tw bx-socialsidebar-icon" target="-blank" href="https://twitter.com/rakittaru"></a></li>
+                            <li><a class="vk bx-socialsidebar-icon" target="-blank" href="https://vk.com/rakittaru"></a></li>
+                            <li><a class="in bx-socialsidebar-icon" target="-blank" href="https://www.instagram.com/rakittaru/"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row"></div>
