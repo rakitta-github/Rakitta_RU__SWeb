@@ -1,0 +1,218 @@
+//= header.inc.html
+//= breadcrumb.inc.html
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-none">
+            <h2 class="col-xs-12 col-sm-8 col-md-6 col-lg-5 text-left">Партнерам</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding-none">
+    <div class="row">
+        <div id="carousel-partners" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item">
+                    <div class="container-fluid padding-none">
+                        <img src="/assets/img/photo-palermo.png" alt="">
+
+                        <div class="carousel-caption partners-slider-content">
+                            <p>ПРЕЗЕНТАЦИЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid padding-none">
+                        <img src="/assets/img/photo-palermo.png" alt="">
+
+                        <div class="carousel-caption partners-slider-content">
+                            <p>ПРЕЗЕНТАЦИЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <div class="container-fluid padding-none">
+                        <img src="/assets/img/photo-palermo.png" alt="">
+
+                        <div class="carousel-caption partners-slider-content">
+                            <p>ПРЕЗЕНТАЦИЯ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control arrow-partners" href="#carousel-partners" data-slide="prev"><span></span></a>
+            <a class="right carousel-control arrow-partners" href="#carousel-partners" data-slide="next"><span></span></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-none">
+            <h2 class="col-xs-12 col-sm-8 col-md-8 col-lg-8 partners-h2 text-left">Анкета для потенциальных
+                дистрибьюторов:</h2>
+        </div>
+    </div>
+    <form class="distr-form" method="post" action=".">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-sm-4 form-group">
+                        <label for="fio">ФИО контактного лица</label>
+                        <input type="text" class="form-control" name="fio" id="fio">
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <label for="occupation">Должность</label>
+                        <input type="text" class="form-control" name="occupation" id="occupation">
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <label for="org">Организация</label>
+                        <input type="text" class="form-control" name="org" id="org">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+            <label for="address">Адрес центрального офиса</label>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="address" id="address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="text" class="form-control" name="phone" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="site">Сайт</label>
+                    <input type="text" class="form-control" name="site" id="site">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="row">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-8  text-right">
+                            <label for="part">
+                                Доля потолочных и стеновых панелей (%) в общем объеме выручки компании за прошлый год
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="part" id="part">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-8  text-right">
+                            <label for="shops">Сколько собственных розничных точек имеет компания</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="shops" id="shops">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-8  text-right">
+                            <label for="distr">Сколько оптовых посредников имеет компания</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="distr" id="distr">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-8  text-right">
+                            <label>Наличие собственного склада</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="button" class="form-control" name="stock_true" id="stock_true" value="да">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="button" class="form-control" name="stock_false" id="stock_false" value="нет">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group clearfix">
+
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="/assets/img/captcha.png" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <input class="form-control" type="text" name="captcha"
+                                   placeholder="Введите код">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 submit-btn">
+                            <input type="submit" value="Отправить" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row panel-3d">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-none">
+            <h2 class="col-xs-12 col-sm-8 col-md-8 col-lg-8 partners-h2 text-left">Рекламные материалы:</h2>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row panel-3d">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="rakitta-block">
+                <img src="/assets/img/photo-download-pdf.png" alt="">
+
+                <h3 class="mbt20">Название</h3>
+                <hr class="green-line">
+                <p><a href="#" download>Скачать в PDF</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+//= footer.inc.html

@@ -1,0 +1,31 @@
+.certificate-alt {
+    text-align: center;
+}
+
+.contacts-form {
+
+}
+
+.council-block .rakitta-block {
+    min-height: 619px;
+}
+
+@media (max-width: 992px) {
+    .install-nav {
+        display: none;
+    }
+    .council-block .rakitta-block {
+        min-height: auto;
+
+    }
+    #carousel-panel-3d .slick-next, #carousel-panel-3d .slick-prev {
+        margin-top:-10px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .panel-3d .rakitta-block {
+        width: auto;
+    }
+}

@@ -1,0 +1,8 @@
+/.git
+/bitrix
+/upload
+/dump.sql
+/.idea
+/node_modules
+/build
+/index.html.bak

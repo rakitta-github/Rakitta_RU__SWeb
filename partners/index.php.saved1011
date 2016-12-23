@@ -1,0 +1,96 @@
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetTitle("Партнерам") ?>
+<div class="container">
+	<ul class="breadcrumb">
+		<li><a href="/">Главная</a></li>
+		<li class="active"><? $APPLICATION->ShowTitle() ?></li>
+	</ul>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-none">
+			 <a class="anctor" name="vantages"></a>
+			<h2 class="col-xs-12 col-sm-8 col-md-6 col-lg-5 text-left">Преимущества работы</h2>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding-none">
+	<div class="container">
+		<div class="slide" id="carousel-partners">
+			 <?
+                CModule::IncludeModule('iblock');
+                $arSelect = Array("ID", "NAME", "IBLOCK_ID", "CODE", "DETAIL_PICTURE", "PREVIEW_TEXT");
+                $arFilter = Array("IBLOCK_ID" => IntVal(5), "SECTION_ID" => intval(7), "ACTIVE_DATE" => "Y", "ACTIVE" => "Y");
+                $res = CIBlockElement::GetList(["SORT" => "ASC"], $arFilter, false, Array("nPageSize" => 50), $arSelect);
+                $i = 1;
+                while ($ob = $res->GetNextElement()) :
+                    $arFields = $ob->GetFields();
+                    $arProps = $ob->GetProperties();
+                    ?>
+					<div class="item<? if ($i++ == 1) echo ' active'; ?>">
+						<div class="container-fluid padding-none">
+							 <img alt="<?= $arFields['NAME'] ?>" src="<?= CFile::GetPath($arFields['DETAIL_PICTURE']) ?>">
+
+							<div class="carousel-caption partners-slider-content">
+								<?= $arFields['PREVIEW_TEXT'] ?>
+							</div>
+						</div>
+					</div>
+			 <? endwhile ?>
+		</div>
+	</div>
+	<a name="form"></a>
+	<?$APPLICATION->IncludeComponent(
+		"nujin.ru:main.feedback",
+		"partners",
+		Array(
+			"EMAIL_TO" => "marketing@rakitta.ru",
+			"EVENT_MESSAGE_ID" => array(),
+			"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+			"REQUIRED_FIELDS" => array("NAME","EMAIL"),
+			"USE_CAPTCHA" => "Y",
+			"FORM_NAME" => "со страницы партнёров"
+		)
+	);?>
+	<div class="container">
+
+		<div class="row panel-3d">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				 <a class="anctor" name="materials"></a>
+				<h2 class="col-xs-12 col-sm-8 col-md-8 col-lg-8 partners-h2 text-left">Рекламные материалы:</h2>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="rakitta-block">
+ <a href="/files/listovka.pdf"  target=_blank" > <img alt="listovka2.jpg" src="/upload/medialibrary/c1d/c1db25f05fb96c11a5e85c27fe822f11.jpg" class="wide-picture"> </a> <a href="/files/listovka.pdf"  target=_blank" >
+					<h3 class="mbt20">Листовка А5</h3>
+ </a>
+					<hr class="green-line">
+					<p>
+ <a href="/files/listovka.pdf"  target=_blank" >Скачать</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="rakitta-block">
+ <a href="/files/instruktsia_partner.pdf"  target=_blank" > <img alt="photo1168409616693962845.jpg" src="/upload/medialibrary/14c/14cedf1b95e90f3d45074b002e296a08.jpg" class="wide-picture"> </a> <a href="/files/instrukzia_partneram.pdf"  target=_blank" >
+					<h3 class="mbt20">Инструкция по монтажу</h3>
+ </a>
+					<hr class="green-line">
+					<p>
+ <a href="/files/instrukzia_partneram.pdf"  target=_blank" >Скачать</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="rakitta-block">
+ <a href="/files/instruktsia_partner.pdf"  target=_blank" > <img alt="photo1168409616693962845.jpg" src="/upload/medialibrary/14c/14cedf1b95e90f3d45074b002e296a08.jpg" class="wide-picture"> </a> <a href="/files/instrukzia_partneram.pdf"  target=_blank" >
+					<h3 class="mbt20">Стеллаж под продукцию</h3>
+ </a>
+					<hr class="green-line">
+					<p>
+ <a href="/files/stellazh.pdf"  target=_blank" >Скачать</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

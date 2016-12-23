@@ -1,0 +1,71 @@
+//= header.inc.html
+//= breadcrumb.inc.html
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-none">
+      <h2 class="col-xs-12 col-sm-8 col-md-6 col-lg-5 text-left">Каталог продукции Rakitta</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="col-xs-12 col-sm-5 col-md-12 col-lg-12 rakitta-block contacts-block">
+        <div>
+          <h4>Главный офис:</h4>
+          <p>
+            Санкт-Петербург, ул. Комсомола, д.1-3 <br>
+            тел. +7 (812) 425-69-63<br>
+            info@rakitta.ru
+          </p>
+          <p>с9:00 до 18:00<br> (сб. и вс. выходной)</p>
+        </div>
+        <a href="#" class="btn-more">
+          <span>Скачать схему проезда </span>
+          <div></div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-5  col-sm-offset-1 col-md-12 col-lg-12 col-md-offset-0 rakitta-block contacts-block">
+        <div>
+          <h4>Производство и склад:</h4>
+          <p>
+            Санкт-Петербург, ул. Комсомола, д.1-3 <br>
+            тел. +7 (812) 425-69-63<br>
+            factory@rakitta.ru
+          </p>
+          <p>с9:00 до 18:00<br> (сб. и вс. выходной)</p>
+        </div>
+        <a href="#" class="btn-more">
+          <span>Скачать схему проезда </span>
+          <div></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="contactsMap" class="contacts-map ym"></div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 distr-form contacts-form">
+      <form method="post" action=".">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <label for="name">Ваше имя:</label>
+          <input type="text" class="form-control" name="name" id="name">
+          <label for="phoneORemail">Телефон / e-mail:</label>
+          <input type="text" class="form-control" name="phoneoremail" id="phoneORemail">
+          <label for="message">Текст сообщения:</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+          <div class="col-xs-12 col-md-12 col-md-12 col-lg-12 captcha padding-none">
+            <div class="col-xs-6 col-md-6 col-md-6 col-lg-6">
+              <img src="/assets/img/captcha.png" alt="">
+            </div>
+            <input class="col-xs-6 col-md-6 col-md-6 col-lg-6" type="text" class="form-control" name="captcha"
+                   placeholder="Введите код">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 submit-btn">
+            <input type="submit" class="form-control">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+//= footer.inc.html

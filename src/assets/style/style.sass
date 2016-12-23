@@ -1,0 +1,1263 @@
+/*= bootstrap.min.css */
+/*= slick.css */
+/*= slick-theme.css */
+/*= colorbox.css */
+
+// Шрифты
+@font-face
+  font-family: 'OpenSans'
+  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.ttf') format('truetype'), url('../fonts/OpenSans.svg#OpenSans') format('svg')
+  font-weight: normal
+  font-style: normal
+
+// Общие стили
+
+img
+  &.wide-picture
+    max-width: 100%
+    @media (max-width: 320px)
+      height: auto
+
+.pba
+  @media (max-width: 992px)
+    margin-bottom: 30px
+
+.fs12
+  font-size: 12px
+
+.fs14
+  font-size: 14px
+
+.fs16
+  font-size: 16px
+
+.fs18
+  font-size: 18px
+
+.fs22
+  font-size: 22px
+
+.green
+  color: #00985f
+
+/** modify **/
+.bold
+  font-weight: 600
+
+.green-border-block
+  border-top: 2px solid #00985f
+  margin-top: 10px
+
+.padding-none
+  padding: 0
+
+.underline
+  text-decoration: underline
+
+.margin-none
+  margin: 0 !important
+
+.mgb60
+  margin-bottom: 60px
+
+.mgb20
+  margin-bottom: 20px
+
+.mbt30
+  margin-top: 30px
+
+.mbt20
+  margin-top: 20px
+
+body
+  font-family: OpenSans, Tahoma, Arial, sans-serif
+  background: #f5f5f5
+  color: #7c7c7c
+  font-size: 14px
+  overflow-x: hidden
+
+h2
+  letter-spacing: .5px
+  font-size: 30px
+  //!
+  text-align: center
+  margin-top: 0
+  margin-bottom: 45px
+  font-weight: bold
+
+h3
+  font-size: 24px
+  color: #00985f
+  margin-top: 0
+  margin-bottom: 0
+
+a
+  color: #7c7c7c
+  cursor: pointer
+  transition: all ease .5s
+  &:hover, &:focus
+    text-decoration: none
+    color: #7c7c7c
+
+.green-link
+  color: #00985f
+  border-bottom: 1px dashed #00985f
+  &:hover
+    border-bottom: 1px solid #00985f
+
+.box
+  margin-top: 70px
+  margin-bottom: 30px
+
+.rakitta-block
+  background: #fff
+  border-bottom: 1px solid #d6d6d6
+  padding-bottom: 30px
+
+.btn-more
+  position: absolute
+  bottom: 0
+  right: 14px
+  span
+    font-size: 12px
+    margin-right: 5px
+    margin-top: 2px
+    line-height: 2
+    display: none
+  div
+    width: 27px
+    height: 27px
+    background: #00985f
+    position: relative
+    float: right
+    &:after
+      content: " "
+      background: url("../img/vantage-tree.png") center center no-repeat
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+  &:hover
+    div
+      background: #00985f
+      &:after
+        background: url("../img/vantage-arrow.png") center center no-repeat
+    span
+      display: inline-block
+  &.btn-con
+    right: 0
+
+.breadcrumb
+  font-size: 14px
+  padding: 15px 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+  @media(max-width: 992px)
+    font-size: 0
+  .active
+    color: #00985f
+
+.carousel-control
+  &.left
+    background: url("../img/slider-arrow-left.png") center center no-repeat
+    width: 60px
+    background-size: auto 30%
+  &.right
+    background: url("../img/slider-arrow-right.png") center center no-repeat
+    width: 60px
+    background-size: auto 30%
+
+.textmark
+  color: #00985f
+  font-weight: bold
+
+.form-control
+  &:focus
+    box-shadow: none
+    border-color: #fff
+// Шапка
+header
+  .header-wrapper
+    position: relative
+    margin-top: 20px
+  .logo
+    width: 110px
+    float: left
+  .tagline
+    font-family: 'Roboto', sans-serif
+    font-size: 27px
+    color: #7c7c7c
+    font-weight: bolder
+    line-height: 1.1
+    margin-top: 13px
+    max-width: 340px
+    @media (max-width: 320px)
+      font-size: 14pt
+    @media (max-width: 425px)
+      font-size: 18pt
+  .contacts
+    font-size: 14px
+    color: #7c7c7c
+    height: 40px
+    margin-top: 25px
+    position: relative
+    border-left: 1px solid #00985f
+    float: right
+    @media (max-width: 991px)
+      float: left
+      margin-bottom: 5px
+    @media (max-width: 767px)
+      margin-top: 10px
+    &:before
+      content: " "
+      position: absolute
+      top: 3px
+      left: -40px
+      width: 30px
+      height: 30px
+    &.address
+      @media (min-width: 991px)
+        margin-left: 30px
+        width: 210px
+      @media (max-width: 425px)
+        margin-left: 92px
+      &:before
+        background: url("../img/icon-balun.png") center center no-repeat
+    &.phone
+      @media (min-width: 991px)
+        margin-left: 30px
+        width: 160px
+      @media (max-width: 425px)
+        margin-left: 92px
+      &:before
+        background: url("../img/icon-phone.png") center center no-repeat
+    p
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      display: table
+  .search-frame
+    margin-top: 25px
+    @media (max-width: 1199px)
+      margin-top: 0
+    @media (max-width: 991px)
+      z-index: 99999
+      width: calc(100% - 117px)
+      right: 25px
+      position: absolute
+      margin-top: 85px
+    @media (max-width: 767px)
+      margin-top: 195px
+    input
+      height: 41px
+      border-radius: 0
+      border: 1px solid #00985f
+      background: #f5f5f5
+      padding-left: 60px
+      position: relative
+      @media (max-width: 991px)
+        background: #f5f5f5
+        border: 1px solid #fff
+    button
+      position: absolute
+      left: 15px
+      top: 0
+      border: none
+      height: 100%
+      width: 60px
+      display: block
+      border-radius: 0
+      background: transparent
+      &:before
+        background: url('../img/icon-search.png') center top no-repeat
+        width: 16px
+        height: 21px
+        display: block
+        position: absolute
+        content: ''
+        top: 11px
+        left: 20px
+      &:hover
+        background: #00985f
+        &:before
+          background: url('../img/icon-search.png') center bottom no-repeat
+  // Меню
+  nav
+    margin-top: 10px
+    width: 100%
+    &.navbar
+      background: #00985f
+      margin-bottom: 0
+    &.navbar-default
+      border: none
+      color: #fff
+      z-index: 9999
+    .navbar-header
+      display: none
+      min-height: 50px
+      @media (max-width: 991px)
+        display: block
+        float: none
+        .navbar-toggle
+          padding: 0
+          margin: 0 0 0 20px
+          border: 0
+          display: block
+          float: none
+          text-transform: uppercase
+          line-height: 50px
+          &:hover, &:focus
+            background: none
+          &:hover
+            text-decoration: underline
+    .navbar-collapse
+      border-bottom: 1px solid #ffffff
+      box-shadow: none
+      &.collapse
+        @media (max-width: 991px)
+          display: none !important
+          &.in
+            display: block !important
+    .nav
+      text-align: justify
+      font-size: 0
+      &:after
+        content: ""
+        display: inline-block
+        width: 100%
+      > li
+        display: inline-block
+        width: auto
+        @media (max-width: 991px)
+          display: block
+          &:nth-child(n+2) > a
+            border-top: 1px solid #4d7a4d
+        &.spacer
+          &:after
+            content: ""
+            background: #4d7a4d
+            height: 30px
+            width: 1px
+            position: absolute
+            top: -21px
+          @media (max-width: 991px)
+            display: none
+        a
+          color: #fff
+          white-space: nowrap
+          text-transform: uppercase
+          padding: 0
+          line-height: 50px
+          span
+            transition: all ease .5s
+            padding-bottom: 3px
+            border-bottom: 2px solid transparent
+        > a
+          font-size: 16px
+          &:hover, &:focus, &:active, &.selected
+            background: none
+            > span
+              @media (min-width: 991px)
+                border-bottom: 2px solid #fff
+        @media (min-width: 991px)
+          &:hover
+            > a
+              & + ul
+                background: #00985f
+                padding: 5px 15px
+                margin: 0
+                display: block
+                position: absolute
+                > li
+                  display: block
+                  > a
+                    line-height: 30px
+                    &:hover
+                      border-bottom: 2px solid #fff
+        > ul
+          @media (min-width: 768px)
+            left: -30px
+          margin: 5px 0 0 0
+          border-top: 1px solid #4d7a4d
+          padding: 0
+          display: none
+          list-style: none
+          @media (max-width: 991px)
+            display: block
+            max-width: 400px
+            margin: 0 auto
+            text-align: justify
+            font-size: 0
+            &:after
+              content: ""
+              display: inline-block
+              width: 100%
+          > li
+            display: inline-block
+            > a
+              line-height: 42px
+              font-size: 11px
+// Главная страница
+
+.main-slider-wrapper
+  overflow: hidden
+  .main-slider
+    &.left
+      background: url("../img/main-slider-arrow-left.png") center center no-repeat
+      background-size: auto 30%
+      left: 15px
+    &.right
+      background: url("../img/main-slider-arrow-right.png") center center no-repeat
+      background-size: auto 30%
+      right: 15px
+
+// Преимущества 3D панелей Rakitta
+.plus
+  .plus-block
+    margin-top: 30px
+    position: relative
+  //min-height: 135px
+  .plus-text
+    //min-height: 135px
+    //height: 195px
+    @media (max-width: 1197px) and (min-width: 991px)
+      text-align: center
+    @media (max-width: 767px)
+      text-align: center
+    p
+      height: 44px
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-top: 15px
+  h3
+    font-size: 15px
+    bottom: 0
+    font-weight: bold
+    margin-top: 30px
+  .plus-icon
+    background: #00985f
+    position: relative
+    text-align: center
+    //height: 195px
+    @media (max-width: 767px)
+      height: auto
+    img
+      //height: 195px
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+  &.full-img
+    .plus-icon
+      background: #fff
+      padding: 0
+      img
+        width: 100%
+        //height: 135px
+        position: relative
+        @media (max-width: 1197px) and (min-width: 991px)
+          width: 225px
+        @media (max-width: 767px)
+          width: 100%
+          height: auto
+
+.plus.full-img
+  .products_section
+    .plus-icon img
+      //height: 155px
+
+// Что такое
+.what-is-it
+  .what-is-it-faq
+    margin-top: 30px
+
+// О компании
+
+.fs-page-16
+  p
+    font-size: 16px
+
+.collection-header
+  padding-bottom: 0
+  span.green
+    display: block
+    margin-top: 15px
+  h3
+    font-size: 24px
+    text-transform: uppercase
+  &.plus-text p
+    height: 73px
+
+.collection_page
+  h2
+    margin-bottom: 15px
+
+// Где используются 3D панели Rakitta
+.where-to-use
+  img
+    width: 100%
+  h3
+    text-align: center
+    text-transform: uppercase
+    padding: 24px 0 0 0
+
+.how-to-watch
+  img
+    width: 100%
+  h3
+    font-size: 18px
+    text-align: center
+    padding-left: 20px
+    text-transform: uppercase
+    color: #6f6f73
+    &.green
+      color: #00985f
+
+hr
+  &.green-line
+    border-bottom: 1px solid #00985f
+    width: 70%
+
+// 3D панели Rakitta
+.panel-3d
+  .rakitta-block
+    width: 370px
+    @media (max-width: 425px)
+      width: 100%
+    border-top: 2px solid #00985f
+    margin-top: 10px
+    margin-right: 30px
+  h3
+    text-align: center
+  p
+    text-align: center
+  .panel-img
+    width: 100%
+    //background: url("../img/panel-3d-bg.png") center center no-repeat
+    height: 300px
+    position: relative
+  button
+    top: calc(50% - 85px)
+// Сертификаты
+.btn-zoom
+  background: url("../img/btn-zoom.png") center center no-repeat
+  width: 30px
+  height: 31px
+  position: absolute
+  top: 30px
+  left: 45px
+  opacity: 0.5
+  transition: opacity 400ms ease
+
+.splash:hover .btn-zoom
+  opacity: 1
+// Кнопка купить
+.btn-buy,
+.btn-buy:active,
+.btn-buy:focus
+  font-size: 30px
+  padding-top: 10px
+  padding-bottom: 10px
+  background: #00985f
+  color: #fff
+  text-align: center
+  text-decoration: none
+
+.btn-buy:hover
+  color: #fff
+  background: #05b574
+
+//Подвал
+footer
+  background: #233e23
+  margin-top: 70px
+  color: #fff
+  font-size: 14px
+  a
+    color: #fff
+    font-size: 14px
+    &:hover, &:active, &:focus
+      color: #fff
+    &:hover
+      text-decoration: underline
+  .site-map
+    padding-top: 30px
+    padding-bottom: 40px
+    background: #00985f
+    ul
+      margin: 30px auto
+      padding-left: 10px
+      li
+        text-decoration: none
+        list-style: none
+        line-height: 1
+        margin-top: 10px
+        color: #fff
+        font-size: 14px
+        &:first-child, &:first-child a
+          text-transform: uppercase
+          font-size: 18px
+  .footer-info
+    padding-top: 30px
+    padding-bottom: 20px
+    position: relative
+  .footer-logo
+    position: absolute
+    bottom: 10px
+    right: 15px
+    @media(max-width: 768px)
+      bottom: 25px
+    @media(max-width: 425px)
+      bottom: 30px
+
+// Slick Slider
+.slick-slide
+  outline: none
+  cursor: pointer
+
+.slick-arrow
+  border: none
+  width: 64px
+  height: 200px
+  position: absolute
+  background: none
+  text-indent: -99999px
+  z-index: 2
+  //top: 15%
+  outline: none
+  opacity: 0.7
+  &:hover
+    opacity: 1
+
+.slick-prev
+  left: 10px
+  &:after
+    content: " "
+    width: 60px
+    height: 148px
+    background: url("../img/slider-arrow-left.png") top left no-repeat
+    display: block
+
+.slick-next
+  right: 10px
+  &:after
+    content: " "
+    width: 60px
+    height: 148px
+    background: url("../img/slider-arrow-right.png") top right no-repeat
+    display: block
+
+.myslick-about
+  margin-top: 80px
+  img
+    width: 370px
+    margin-right: 30px
+
+@media (min-width: 1100px)
+  .slick-prev
+    left: -60px
+  .slick-next
+    right: -60px
+// Каталог
+
+.left.small-slider
+  background: url("../img/small-slider-arrow-left.png") center center no-repeat
+  width: 20px
+
+.right.small-slider
+  background: url("../img/small-slider-arrow-right.png") center center no-repeat
+  width: 20px
+
+.left.palermo-slider
+  background: url("../img/palermo-slider-arrow-left.png") center center no-repeat
+
+.right.palermo-slider
+  background: url("../img/palermo-slider-arrow-right.png") center center no-repeat
+
+.palermo-list-title
+  font-size: 14px
+  color: #00985f
+  font-weight: bold
+  margin-top: 0
+
+.imp
+  color: #00985f
+
+.g-book-list
+  list-style: none
+  padding: 0
+  background: #f5f5f5
+  font-size: 14px
+  margin-top: 30px
+  margin-bottom: 20px
+  li
+    width: 100%
+    position: relative
+    margin-top: 5px
+    &:before
+      content: " "
+      position: absolute
+      bottom: 5px
+      width: 100%
+      display: block
+      border-bottom: 1px dotted #7c7c7c
+      z-index: 1
+    span:first-child
+      background: #f5f5f5
+      text-align: left
+      z-index: 2
+      position: relative
+      &:last-child
+        background: #f5f5f5
+        text-align: right
+        float: right
+        z-index: 2
+        position: relative
+        color: #00985f
+
+#carousel-panel-3d
+  opacity: 0
+  transition: opacity .3s ease
+  img
+    cursor: pointer
+  margin-top: 30px
+  .slick-prev
+    left: 55px
+  .slick-next
+    right: 55px
+// Области применения
+.areas-page
+  ul, p, span
+    font-weight: normal
+  p:first-child, img:first-child
+    margin-top: 0
+  ul, p
+    margin-top: 30px
+  img
+    margin-top: 70px
+    @media (max-width: 425px)
+      margin-top: 0
+
+@media (max-width: 425px)
+  .areas-text
+    margin-top: 20px
+
+.areas-box
+  margin-bottom: 60px
+  img
+    margin-top: 5px
+  h3
+    @media (max-width: 767px)
+      margin-top: 10px
+    @media (max-width: 425px)
+      margin-top: 20px
+  p, ul
+    margin-top: 14px
+  p
+    font-size: 16px
+
+.certificate
+  .certificate-alt
+    margin-top: 10px
+    @media(min-width: 1200px)
+      margin-top: 30px
+    margin-bottom: 30px
+    text-align: center
+    padding-left: 5px
+
+
+.areas-list
+  font-size: 16px
+  color: #00985f
+  padding-left: 16px
+  li span
+    font-size: 14px
+    color: #7c7c7c
+
+.textmark-areas
+  font-weight: 100
+  color: #00985f
+
+// Преимущества
+
+.vantage-box
+  margin-bottom: 60px
+  font-size: 16px
+  p
+    margin-top: 15px
+
+// Монтаж
+.install-page
+  h2
+    margin-bottom: 0
+  h4, ul
+    margin-bottom: 30px
+  p
+    margin-top: 15px
+    margin-bottom: 10px
+  h3
+    font-size: 30px
+    margin: 0
+  h4
+    font-size: 17px
+    font-weight: bolder
+    color: #00985f
+  p, .palermo-list p
+    font-weight: normal
+    font-size: 16px
+  .install-content
+    margin-top: 55px
+    margin-bottom: 5px
+    img
+      max-width: 100%
+      height: auto
+    ul, .palermo-list
+      font-size: 14px
+      list-style: none
+      margin: 0
+      padding: 0
+      padding-left: 20px
+      li
+        font-weight: bold
+        font-size: 14px
+        position: relative
+        color: #7c7c7c
+        padding-left: 20px
+        &:before
+          content: '\2022'
+          color: #00985f
+          font-size: 20px
+          position: absolute
+          padding-right: .5em
+          top: -3px
+          left: -20px
+    ol
+      counter-reset: heading
+      list-style: none
+      margin: 0
+      padding: 0
+      li
+        font-size: 16px
+        padding-left: 0
+        margin-bottom: 25px
+        &:before
+          position: relative
+          display: inline-block
+          float: left
+          margin-right: 3px
+          counter-increment: heading
+          content: counter(heading) "."
+          color: #00985f
+          text-align: right
+          font-weight: normal
+          font-size: 16px
+          background: none
+    h3
+      &:first-child
+        margin-top: 0
+
+  .install-slider
+    &.left
+      background: url("../img/install-slider-arrow-left.png") center center no-repeat
+    &.right
+      background: url("../img/install-slider-arrow-right.png") center center no-repeat
+  nav
+    //z-index: 9999
+    width: 300px
+    padding: 0 30px 30px 30px
+    //top: 0
+    margin-top: 60px
+    transition: all .5s ease
+    ul
+      padding: 0
+      list-style: none
+      li
+        border-bottom: 1px solid #b4c7b4
+        padding-top: 10px
+        padding-bottom: 10px
+        &:last-child
+          border-bottom: 0
+        a
+          font-weight: bolder
+          color: #7c7c7c
+          text-align: left
+          &:hover, &:active, &:focus
+            color: #00985f
+
+.download-pdf-btn
+  background: #00985f
+  font-weight: bolder
+  font-size: 16px
+  padding: 10px 20px
+  color: #fff
+  display: inline-block
+  &:hover, &:active, &:focus
+    color: #fff
+
+// Полезные советы
+.council-block
+  position: relative
+  margin-bottom: 30px
+  img
+    max-width: 100%
+  .rakitta-block
+    min-height: 640px
+    border-top: 2px solid #00985f
+    img
+      max-width: 100%
+  h3, p
+    font-weight: bolder
+    padding: 5px 30px
+
+// Партнерам
+.partners-slider-content
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  width: 530px
+  height: 70px
+  p
+    background: rgba(0, 0, 0, 0.35)
+    z-index: 2
+    font-size: 60px
+    color: #fff
+
+#carousel-partners img
+  width: 100%
+  display: block
+  margin: 0 auto
+
+.arrow-partners
+  &.left
+    left: 15px
+  &.right
+    right: 15px
+
+.partners-h2
+  margin-top: 40px
+
+.partners-page
+  .panel-3d
+    h3
+      font-weight: bolder
+      text-transform: uppercase
+    a
+      border-bottom: 1px dashed #7c7c7c
+      font-weight: bolder
+      &:hover
+        border-bottom: 1px solid #7c7c7c
+    img
+      width: 100%
+    &:nth-child(n+2)
+      margin-top: 20px
+
+@media (max-width: 698px)
+  .partners-slider-content
+    width: 280px
+    p
+      font-size: 35px
+// Форма
+.distr-form
+  margin: 10px auto
+  background-color: #ddd
+  color: #777
+  font-size: 16px
+  padding: 30px 60px
+  .tright
+    text-align: right
+    @media(max-width: 767px)
+      text-align: left
+  label
+    line-height: 18px
+    &.empty
+      @media(max-width: 767px)
+        display: none
+  .form-control
+    border: none
+    border-radius: 0
+    box-shadow: none
+    font-size: 18px
+  input[type=button]
+    font-size: 20px
+    padding-top: 3px
+  input[type=button]:hover
+    background: #ccc
+  .submit
+    margin-top: 20px
+  input[type=submit]
+    color: #fff
+    background-color: #36A062
+    transition: all ease .5s
+  input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus
+    background-color: #36A062
+  .button-group
+    margin-top: 0
+    padding-left: 0
+    padding-right: 0
+  .submit
+    padding-left: 0
+    padding-right: 0
+  @media (max-width: 1200px)
+    label
+      font-size: 12px
+    .submit .captcha
+      padding-right: 15px
+  @media (max-width: 991px)
+    label
+      font-size: 18px
+    .button-group
+      margin-top: 15px
+      padding-left: 0
+      padding-right: 0
+  @media (max-width: 426px)
+    padding: 29px 31px
+// Где купить
+.map-page
+  .yandex-map
+    height: 490px
+    width: 100%
+  .city-btn
+    button
+      font-family: OpenSans, Tahoma, Arial, sans-serif
+      color: #7c7c7c
+      font-size: 24px
+      font-weight: bold
+      background: none
+      border: none
+      margin-bottom: 20px
+      margin-top: -15px
+      span.caret
+        color: #00985f
+      .dropdown-toggle
+        color: #00985f
+  .map-points
+    margin-top: 30px
+    .btn-more
+      span
+        display: inline-block
+  .sale-tabs
+    li
+      @media (max-width: 425px)
+        width: 100%
+        margin-top: 10px
+      &.active
+        a
+          background: #00985f
+      a
+        border-radius: 0
+        color: #fff
+        background: #848484
+        font-weight: bolder
+        font-size: 16px
+        width: 170px
+        text-align: center
+        margin-right: 30px
+        &:hover
+          background: #00985f
+  .plus-text
+    height: 170px
+    h3
+      margin-top: 29px
+    p
+      margin-top: 20px
+      height: 100px
+
+.plus-icon
+  position: relative
+  img
+    height: 170px
+  .map-icon-zoom
+    width: 35px
+    height: 35px
+    background: url("../img/map-item-zoom.png") center center no-repeat
+    position: absolute
+    top: 10px
+    left: 10px
+    opacity: 0.4
+  &:hover
+    .map-icon-zoom
+      opacity: 1
+// Контакты
+.contacts-col
+  h3
+    padding-left: 20px
+    padding-bottom: 10px
+
+.contacts-block
+  padding: 20px 20px 30px 20px
+  margin-top: 10px
+  font-weight: bolder
+  h4
+    font-weight: bolder
+    color: #00985f
+  &:nth-child(n+3)
+    margin-top: 30px
+  .btn-more
+    right: 0
+  span
+    display: inline
+
+.contacts-form
+  height: 431px
+  padding: 0
+  .captcha
+    margin-top: 15px
+    img
+      width: 100%
+  .submit-btn
+    margin-top: 15px
+  label
+    margin: 10px
+    margin-left: 7px
+  textarea
+    height: 130px
+
+.contacts-map
+  height: 431px
+  width: 100%
+  margin-top: 9px
+
+.main-slider-text
+  p
+    text-transform: uppercase
+    background: #ffffff
+    font-weight: bold
+  .p1
+    letter-spacing: 1.2px
+    padding: 10px 20px
+    width: 360px
+    font-size: 30px
+    color: #525252
+    margin-bottom: 5px
+  .p2
+    font-family: Tahoma
+    width: 700px
+    font-size: 48px
+    padding-left: 20px
+    color: #649f64
+
+.img-height-index
+  height: 170px
+
+.plus-block
+  .vantages_main_block_height
+    height: 130px
+    @media(max-width: 767px)
+      width: 100%
+      display: table
+    @media(min-width: 992px) and (max-width: 1199px)
+      width: 100%
+      display: table
+    h3
+      font-size: 18px
+      margin: 0
+      padding: 0
+    &.plus-icon
+      a
+        height: 130px
+        img
+          height: 80px
+        @media(max-width: 767px)
+          width: 100%
+          display: table-cell
+          text-align: center
+          vertical-align: middle
+          img
+            position: relative
+        @media(min-width: 992px) and (max-width: 1199px)
+          width: 100%
+          display: table-cell
+          text-align: center
+          vertical-align: middle
+          img
+            position: relative
+    &.rakitta-block
+      height: 130px
+      padding: 0
+      .plus-text
+        margin: 15px 15px 0 15px
+        height: 90px
+        overflow: hidden
+      p
+        height: auto
+        margin: 10px 0 0 0
+
+.img-max
+  height: 170px
+  width: 170px
+
+//стили для блоков map.html
+
+.block-img
+  @media(min-width: 1024px)
+    height: 177px
+
+.index-img-wh
+  width: 140px
+  height: 140px
+
+.council-main
+  &:first-of-type
+    .plus-block
+      margin-top: 0
+  &.plus
+    h3
+      font-size: 18px
+      margin: 0
+      padding: 0
+  .rakitta-block
+    height: 170px
+    padding: 0
+    .plus-text
+      margin: 15px 15px 0 15px
+      height: 130px
+      overflow: hidden
+    p
+      height: auto
+      margin: 10px 0 0 0
+
+
+.council-right
+  padding: 20px
+  h3
+    color: #525252
+  p
+    margin-top: 15px
+
+.anctor
+  position: absolute
+  margin-top: -60px
+
+.captcha-wrapper
+  padding: 2px
+  background: #fff
+
+.council-item
+  img
+    margin-bottom: 20px
+
+.item-description
+  ul
+    padding: 0 20px
+    li
+      position: relative
+      list-style: none
+      &:before
+        content: '\2022'
+        color: #00985f
+        font-size: 20px
+        position: absolute
+        padding-right: .5em
+        top: -3px
+        left: -20px
+  table
+    tr
+      td:nth-child(2)
+        color: #00985f
