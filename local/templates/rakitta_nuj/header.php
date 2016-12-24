@@ -51,6 +51,7 @@
 
         </div>
     </div>
+    <script src="https://use.fontawesome.com/58b29a3d46.js"></script>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header container">
             <button class="navbar-toggle" type="button" data-target="#navbarCollapse" data-toggle="collapse"> Меню</button>
