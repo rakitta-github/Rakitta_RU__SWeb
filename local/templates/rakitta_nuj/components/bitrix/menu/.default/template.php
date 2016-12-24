@@ -46,7 +46,7 @@ foreach ($arResult as $arItem):
         <li class="spacer"></li>
         <li>
             <a href="http://rakitta.online" target="_blank">
-                <i class="fa fa-shopping-cart menucart IMToolTip" title="В интернет-магазин"></i>
+                <i class="fa fa-shopping-cart menucart IMToolTip1" title="В интернет-магазин"></i>
             </a>
         </li>
     <? if ($previousLevel > 1): ?>
